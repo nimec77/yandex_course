@@ -1,0 +1,13 @@
+/target
+
+# IDEs
+.idea
+.vscode
+.cursor
+
+
+# Cargo
+Cargo.lock
+
+# macOS
+.DS_Store
