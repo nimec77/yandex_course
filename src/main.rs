@@ -1,21 +1,14 @@
+mod config;
+mod utils;
+
+use config::DEFAULT_COURSE_NAME;
+use time::OffsetDateTime;
+use utils::helpers::greet;
+
 fn main() {
-    // и присвоение начального значения
-    let mut x = 1;
+    greet();
 
-    // Объявление неизменяемой переменной
-    // и присвоение начального значения
-    let name = "Боб";
+    println!("Сегодня: {}", OffsetDateTime::now_utc().date());
 
-    println!("Привет {name} !");
-
-    println!("Ты пользователь № {x}");
-
-    x = 2;
-
-    // "Затенение" переменной
-    let name = "Алиса";
-
-    println!("Привет {name} !");
-
-    println!("Ты пользователь № {x}");
+    println!("Я прохожу курс: {}!", DEFAULT_COURSE_NAME);
 }
